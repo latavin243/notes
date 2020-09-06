@@ -10,7 +10,8 @@ docker build -t <image_tag_name> .
 docker run \
 -v <local_file_path>:<containter_file_path> \
 --network host \
-<image_tag_name>
+<image_tag_name> \
+<other_args>
 
 # rename tag
 docker tag <image_id> <new_tag_name>
